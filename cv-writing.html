@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Writing | Professional | Savindu Gajaman</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar">
+            <a class="brand" href="index.html">Savindu Gajaman</a>
+            <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="professional.html" class="active">Professional</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="lectures.html">Lectures</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <h1>CV Writing</h1>
+        <p><strong>Project:</strong> Development of an instructional presentation on "Crafting an Effective Curriculum Vitae (CV)."</p>
+        <p><strong>Objective:</strong> To distill the core principles of CV writing into a clear, actionable lesson for job seekers, enabling them to create a compelling document that maximizes their chances of securing interviews.</p>
+        <h2>Key Concepts Synthesized and Applied</h2>
+        <p>This lecture provided a comprehensive framework for understanding the CV as a critical career tool. The key takeaways I have integrated into my own skill set are:</p>
+        <ul class="list">
+            <li><strong>Purpose-Driven Design:</strong> A CV is not just a history of your career; it is a strategic marketing document designed to showcase your qualifications and suitability for a specific role. Its primary purpose is to make a powerful first impression and secure an interview.</li>
+            <li><strong>Structural Integrity:</strong> A clear, consistent, and visually appealing structure. Use reverse chronological order for experience and education, bullet points and white space for readability, and formatting consistency to guide the recruiter's eye.</li>
+            <li><strong>Essential Components:</strong>
+                <ul class="list">
+                    <li><strong>Professional Summary:</strong> A concise, tailored elevator pitch that aligns with the job target.</li>
+                    <li><strong>Work Experience:</strong> Focused on accomplishments using action verbs and quantifiable results, rather than just listing duties.</li>
+                    <li><strong>Skills & Achievements:</strong> A balanced presentation of hard and soft skills, complemented by relevant awards and certifications.</li>
+                </ul>
+            </li>
+            <li><strong>The Principle of Tailoring:</strong> Customizing a CV for each application by researching the job and company, aligning keywords and qualifications to pass ATS and signal genuine fit.</li>
+            <li><strong>Vigilance Against Pitfalls:</strong> Avoid spelling mistakes, irrelevant information, and inconsistent formatting to ensure a polished, professional document.</li>
+        </ul>
+        <h2>Conclusion</h2>
+        <p>This lecture equipped me with a systematic approach to CV writing, transforming it from a mundane task into a strategic exercise in personal branding. The principles of clarity, relevance, and customization are directly applicable to creating persuasive application materials, a skill essential for success in the competitive job market.</p>
+
+        <hr style="border-color: var(--border); margin: 24px 0;">
+        <h2>My CV</h2>
+        
+        <div style="margin-top:16px; border:1px solid var(--border); border-radius:12px; overflow:hidden; background: var(--card);">
+            <iframe src="CV.pdf" title="CV PDF" style="width:100%; height:600px; border:0; background:#fff"></iframe>
+        </div>
+
+        <hr style="border-color: var(--border); margin: 24px 0;">
+        <h2>Cover Letter</h2>
+        <div style="margin-top:16px; border:1px solid var(--border); border-radius:12px; overflow:hidden; background: var(--card);">
+            <iframe src="Cover letter.pdf" title="Cover Letter PDF" style="width:100%; height:600px; border:0; background:#fff"></iframe>
+        </div>
+    </main>
+    <footer class="site-footer">
+        <p>© <span id="year"></span> Savindu Gajaman. All rights reserved.</p>
+    </footer>
+    <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const links = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => links.classList.toggle('open'));
+    document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

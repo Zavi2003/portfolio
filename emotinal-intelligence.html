@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotional Intelligence | Professional | Savindu Gajaman</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="site-header">
+    <nav class="navbar">
+        <a class="brand" href="index.html">Savindu Gajaman</a>
+        <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="professional.html" class="active">Professional</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="lectures.html">Lectures</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<main class="container">
+    <h1>Emotional Intelligence</h1>
+    <p class="lead">Self-awareness, empathy, and communication practices for effective teamwork.</p>
+    
+    <section class="content-section">
+        <h2>Emotional Intelligence</h2>
+        <p>This comprehensive presentation explores emotional intelligence (EI) as a critical skill for personal and professional success. It emphasizes that emotional wellness involves having a positive attitude, high self-esteem, and the ability to recognize and express emotions constructively.</p>
+    </section>
+
+    <section class="content-section">
+        <h2>Key Takeaways</h2>
+        
+        <article class="takeaway">
+            <h3>1. Understanding Emotions</h3>
+            <ul>
+                <li>Emotions consist of three components: subjective experience, physiological response, and behavioral expression</li>
+                <li>They serve adaptive purposes, aid survival, and facilitate social interactions</li>
+                <li>Basic emotions (anger, disgust, fear, happiness, sadness, surprise) are universal and hardwired</li>
+                <li>More complex emotions (empathy, humility, gratitude) are learned over time</li>
+            </ul>
+        </article>
+
+        <article class="takeaway">
+            <h3>2. Emotional Intelligence vs. IQ</h3>
+            <ul>
+                <li>EI focuses on understanding and managing emotions while IQ focuses on cognitive abilities</li>
+                <li>EI can be developed throughout life, while IQ is largely established at birth</li>
+                <li>90% of top performers have high EI, and it's a stronger predictor of success (58%) than IQ</li>
+                <li>Employers value EI because it helps employees remain calm under pressure, resolve conflicts, and lead effectively</li>
+            </ul>
+        </article>
+
+        <article class="takeaway">
+            <h3>3. Components of Emotional Intelligence</h3>
+            <div class="components-grid">
+                <div class="component-card">
+                    <h4>Self-awareness</h4>
+                    <p>Recognizing one's own emotions</p>
+                </div>
+                <div class="component-card">
+                    <h4>Self-management</h4>
+                    <p>Controlling impulsive feelings and behaviors</p>
+                </div>
+                <div class="component-card">
+                    <h4>Social awareness</h4>
+                    <p>Understanding others' emotions and perspectives</p>
+                </div>
+                <div class="component-card">
+                    <h4>Relationship management</h4>
+                    <p>Developing and maintaining good relationships</p>
+                </div>
+            </div>
+        </article>
+
+        <article class="takeaway">
+            <h3>4. Brain Science Behind Emotions</h3>
+            <ul>
+                <li>The limbic system processes emotions while the prefrontal cortex handles executive functions</li>
+                <li>Adolescents rely more on the amygdala (emotional reactions) than the frontal cortex (rational thinking)</li>
+                <li>Brain development continues until around age 25, with significant pruning and myelination during adolescence</li>
+            </ul>
+        </article>
+
+        <article class="takeaway">
+            <h3>5. Practical Applications</h3>
+            <ul>
+                <li>EI helps prevent "amygdala hijack" where emotional responses override rational thinking</li>
+                <li>Positive emotions strengthen immune function while negative emotions signal problems needing attention</li>
+                <li>Emotional contagion means we can influence others' emotional states through our own</li>
+                <li>Only 5% of decisions are conscious; most are subconscious emotional responses</li>
+            </ul>
+        </article>
+    </section>
+
+    <section class="content-section">
+        <h2>EI vs. IQ Comparison</h2>
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th>Emotional Intelligence (EI)</th>
+                    <th>Intelligence Quotient (IQ)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Focuses on understanding and managing emotions</td>
+                    <td>Focuses on cognitive abilities and academic intelligence</td>
+                </tr>
+                <tr>
+                    <td>Can be developed throughout life</td>
+                    <td>Largely established at birth</td>
+                </tr>
+                <tr>
+                    <td>Strong predictor of success in all types of jobs (58%)</td>
+                    <td>Traditional measure of potential success</td>
+                </tr>
+                <tr>
+                    <td>Fosters positive relationships and self-motivation</td>
+                    <td>Enables development of technical skills and conceptual thinking</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="content-section">
+        <h2>Application</h2>
+        <p>This material has provided me with a scientific understanding of how emotions work and why emotional intelligence is crucial for professional success. I've learned practical strategies for recognizing emotional triggers, managing responses, and building stronger interpersonal relationships. These skills are essential for effective leadership, teamwork, and personal well-being in any professional environment.</p>
+    </section>
+</main>
+<footer class="site-footer">
+    <p>© <span id="year"></span> Savindu Gajaman. All rights reserved.</p>
+</footer>
+<script>
+const toggle = document.querySelector('.nav-toggle'); 
+const links = document.querySelector('.nav-links');
+toggle.addEventListener('click', () => links.classList.toggle('open'));
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

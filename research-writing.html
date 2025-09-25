@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Writing | Professional | Savindu Gajaman</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="site-header">
+    <nav class="navbar">
+        <a class="brand" href="index.html">Savindu Gajaman</a>
+        <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="professional.html" class="active">Professional</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="lectures.html">Lectures</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<main class="container">
+    <h1>Research Writing</h1>
+    <h2>Background of the Study</h2>
+    <p>Language policy management in Sri Lanka remains a critical and complex issue, particularly within its multilingual society. The educational sector, especially higher education, is a primary domain where these policies are implemented, with significant implications for academic access, equity, and success.</p>
+
+    <h2>Research Problem</h2>
+    <p>This study addresses the impact of language policies on student learning within Sri Lankan state universities. Despite established policies, there is a need to examine their practical implementation and consequences on the academic experiences and outcomes of students in a linguistically diverse academic environment.</p>
+
+    <h2>Research Objectives</h2>
+    <p>The primary objective of this research is to investigate the implementation of language planning and policy within the higher education context, with a specific focus on the Faculty of Management and Finance at the University of Ruhuna.</p>
+
+    <h2>Literature Review</h2>
+    <p>Existing literature has extensively examined language policies in educational settings, highlighting their profound influence on student learning, identity, and inclusion. Previous studies provide a foundation for understanding the broader theoretical and global context, into which this research aims to insert a specific, localized case study.</p>
+
+    <h2>Significance of the Study</h2>
+    <p>This research contributes to a deeper understanding of how language policies translate into practice and affect educational outcomes in a multilingual state university setting. The findings are expected to provide valuable insights for policymakers, educators, and administrators aiming to enhance equity and effectiveness in higher education language planning.</p>
+</main>
+<footer class="site-footer">
+    <p>© <span id="year"></span> Savindu Gajaman. All rights reserved.</p>
+</footer>
+<script>
+const toggle = document.querySelector('.nav-toggle'); const links = document.querySelector('.nav-links');
+toggle.addEventListener('click', () => links.classList.toggle('open'));
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

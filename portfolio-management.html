@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Management | Professional | Savindu Gajaman</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="site-header">
+    <nav class="navbar">
+        <a class="brand" href="index.html">Savindu Gajaman</a>
+        <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="professional.html" class="active">Professional</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="lectures.html">Lectures</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<main class="container">
+    <h1>Portfolio Management</h1>
+    <h2>My Takeaway: A Portfolio is Your Professional Storybook</h2>
+    <p>This lecture opened my eyes to the fact that a portfolio is so much more than a fancy resume. It's a dynamic, living collection of my professional journey. I learned that whether you're an artist, a teacher, a programmer, or a business professional, a portfolio is the perfect tool to show, not just tell, what you can do.</p>
+
+    <h3>What resonated with me most</h3>
+    <p>The most powerful idea was how versatile a portfolio can be. It's not just for getting a first job. I see now that it's a tool I can use throughout my entire career—for seeking a promotion, switching industries, tracking my own growth, or even attracting freelance clients. It’s the central place where my accomplishments and skills tell a cohesive story.</p>
+    <p>I also appreciated the practical, step-by-step guide to building one. It’s not about throwing every single thing I’ve ever done into a folder. The key steps that stuck with me are:</p>
+    <ul class="list">
+        <li><strong>Starting with "Why":</strong> Before I even begin, I need to ask myself: "Who is this for?" Tailoring the content for a specific audience (like a potential employer vs. a university admissions board) is crucial for making an impact.</li>
+        <li><strong>Providing the Story:</strong> It’s not enough to just show a project or a certificate. The real value comes from adding a sentence or two of context—explaining what I learned from the experience or why I'm proud of that particular achievement. This turns a simple sample into compelling evidence of my skills.</li>
+        <li><strong>Treating it as a Living Document:</strong> A portfolio is never really "finished." The lesson emphasized the importance of regularly updating it with new experiences and seeking feedback from peers. This mindset shift makes the portfolio a tool for active career management, not a one-time chore.</li>
+    </ul>
+
+    <h3>Bringing it all together</h3>
+    <p>Learning about the different online platforms—from LinkedIn for general professionalism to Behance for creatives and GitHub for developers—made the idea of creating my own portfolio feel accessible and less intimidating.</p>
+    <p>This lecture didn't just teach me how to build a portfolio; it changed how I think about presenting myself. It showed me that my career is a collection of stories and achievements, and a well-curated portfolio is the best way to share that narrative with the world. I'm excited to apply these principles to continuously develop my own professional story.</p>
+</main>
+<footer class="site-footer">
+    <p>© <span id="year"></span> Savindu Gajaman. All rights reserved.</p>
+</footer>
+<script>
+const toggle = document.querySelector('.nav-toggle'); const links = document.querySelector('.nav-links');
+toggle.addEventListener('click', () => links.classList.toggle('open'));
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

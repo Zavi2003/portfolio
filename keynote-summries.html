@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keynote Summaries | Professional | Savindu Gajaman</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="site-header">
+    <nav class="navbar">
+        <a class="brand" href="index.html">Savindu Gajaman</a>
+        <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="professional.html" class="active">Professional</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="lectures.html">Lectures</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<main class="container">
+    <h1>Keynote Summaries</h1>
+    <p>Notes and insights from talks, distilled into actionable principles and references.</p>
+    <hr style="border-color: var(--border); margin: 24px 0;">
+    <h2>Report</h2>
+    <div style="margin-top:16px; border:1px solid var(--border); border-radius:12px; overflow:hidden; background: var(--card);">
+        <iframe src="report.pdf" title="Report PDF" style="width:100%; height:600px; border:0; background:#fff"></iframe>
+    </div>
+</main>
+<footer class="site-footer">
+    <p>© <span id="year"></span> Savindu Gajaman. All rights reserved.</p>
+</footer>
+<script>
+const toggle = document.querySelector('.nav-toggle'); const links = document.querySelector('.nav-links');
+toggle.addEventListener('click', () => links.classList.toggle('open'));
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
